@@ -48,7 +48,7 @@ $(document).ready(function() {
                 showItems(Number(i))
             })
 
-            var strActive = ((i == 1) ? ' active' : '')
+            var strActive = ((i == null) ? ' active' : '')
             $li = $('<li>').attr('class', 'page-item' + strActive).append($a)
             $('#page-number').append($li)
         }
